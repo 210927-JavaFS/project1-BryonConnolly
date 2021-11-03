@@ -35,7 +35,7 @@ public class DaoTest {
 		userDAO.updateUser(user);
 		
 		
-		reimbursementDAO.insert(new Reimbursement(1,1,1));
+		reimbursementDAO.addReimbursement(new Reimbursement(1,1,1));
 		
 		
 		

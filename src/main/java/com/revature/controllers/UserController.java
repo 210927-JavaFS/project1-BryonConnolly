@@ -1,34 +1,84 @@
 package com.revature.controllers;
 
-import com.revature.models.UserDTO;
-import com.revature.services.LoginService;
+import java.util.List;
+
+import com.revature.models.User;
+import com.revature.services.UserService;
 
 import io.javalin.Javalin;
 import io.javalin.http.Handler;
 
-public class UserController implements Controller{
-	
-	private LoginService loginService = new LoginService();
+public class UserController implements Controller {
 
-	private Handler loginAttempt = (ctx) -> {
-		UserDTO userDto = ctx.bodyAsClass(UserDTO.class);
-		
-		if(loginService.login(userDto)) {
-			//If someone logs in I will create a session
-			ctx.req.getSession(); //This will create a session for us to track the client that logged in. 
-			
+	private UserService userService = new UserService();
+
+	public Handler getAllUsers = (ctx) -> {
+		if (ctx.req.getSession(false) != null) {
+			List<User> list = userService.getAllUsers();
+
+			ctx.json(list);
 			ctx.status(200);
-		}else {
-			ctx.req.getSession().invalidate();// invalidates any open session tracking the client.
+		} else {
 			ctx.status(401);
 		}
 	};
-	
+
+	public Handler getUser = (ctx) -> {
+		if (ctx.req.getSession(false) != null) {
+			User user = userService.getUser(ctx.pathParam("username"));
+			ctx.json(user);
+			ctx.status(200);
+		} else {
+			ctx.status(401);
+		}
+	};
+
+	public Handler addUser = (ctx) -> {
+		if (ctx.req.getSession(false) != null) {
+			User user = ctx.bodyAsClass(User.class);
+			if (userService.addUser(user)) {
+				ctx.status(201);
+			} else {
+				ctx.status(400);
+			}
+		} else {
+			ctx.status(401);
+		}
+	};
+
+	public Handler updateUser = (ctx) -> {
+		if (ctx.req.getSession(false) != null) {
+			User user = ctx.bodyAsClass(User.class);
+			if (userService.updateUser(user)) {
+				ctx.status(200);
+			} else {
+				ctx.status(400);
+			}
+		} else {
+			ctx.status(401);
+		}
+	};
+
+	public Handler deleteUser = (ctx) -> {
+		if (ctx.req.getSession(false) != null) {
+			String username = ctx.pathParam("username");
+			if (userService.deleteUser(username)) {
+				ctx.status(200);
+			} else {
+				ctx.status(400);
+			}
+		} else {
+			ctx.status(401);
+		}
+	};
+
 	@Override
 	public void addRoutes(Javalin app) {
-		app.post("/login", this.loginAttempt);
+		app.get("/users", this.getAllUsers);
+		app.get("/users/:username", this.getUser);
+		app.post("/users", this.addUser);
+		app.put("/users", this.updateUser);
+		app.delete("/users/:username", this.deleteUser);
 	}
-	
-	
 
 }

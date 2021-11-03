@@ -7,8 +7,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import com.revature.models.Book;
-import com.revature.models.Language;
 import com.revature.models.Reimbursement;
 import com.revature.models.ReimbursementStatus;
 import com.revature.models.ReimbursementType;

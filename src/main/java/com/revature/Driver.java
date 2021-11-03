@@ -6,16 +6,9 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.revature.controllers.AvengerController;
 import com.revature.controllers.Controller;
-import com.revature.controllers.HomeController;
 import com.revature.controllers.UserController;
-import com.revature.models.Book;
-import com.revature.models.Shelf;
-import com.revature.repositories.BookDAO;
-import com.revature.repositories.BookDAOImpl;
-import com.revature.repositories.ShelfDAO;
-import com.revature.repositories.ShelfDAOImpl;
+import com.revature.controllers.LoginController;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 
@@ -66,7 +59,7 @@ public class Driver {
 			config.addStaticFiles("/static", Location.CLASSPATH);
 		});
 		
-		configure(new HomeController(), new AvengerController(), new UserController());
+		configure(new UserController(), new LoginController());
 		
 		app.start(8081);
 

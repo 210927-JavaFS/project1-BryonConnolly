@@ -2,7 +2,6 @@ package com.revature.repositories;
 
 import java.util.List;
 
-import com.revature.models.Avenger;
 import com.revature.models.User;
 
 public interface UserDAO {

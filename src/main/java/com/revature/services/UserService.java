@@ -23,6 +23,26 @@ public class UserService {
 		}
 	}
 	
+	public User getUser(User user) {
+		User founduser = userDao.findByUsername(user.getUsername());
+		if (founduser != null) {
+			return founduser;
+		}else {
+			return new User();
+		}
+	}
+	
+	public User getUser(String username) {
+		User user = userDao.findByUsername(username);
+		if (user != null) {
+			return user;
+		}else {
+			return new User();
+		}
+	}
+	
+	
+	
 	public boolean addUser(User user) {
 		return userDao.addUser(user);
 	}
@@ -31,9 +51,19 @@ public class UserService {
 		return userDao.updateUser(user);
 	}
 	
-	public boolean deleteAvenger(int id) {
+	public boolean deleteUser(int id) {
 		User user = getUser(id);
 		return userDao.deleteUser(user);
 	}
-
+	
+	public boolean deleteUser(User user) {
+		return userDao.deleteUser(user);
+	}
+	
+	public boolean deleteUser(String username) {
+		User user = getUser(username);
+		return userDao.deleteUser(user);
+	}
+	
+	
 }

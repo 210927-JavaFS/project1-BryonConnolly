@@ -9,10 +9,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import com.revature.models.Author;
-import com.revature.models.Avenger;
-import com.revature.models.Book;
-import com.revature.models.Language;
 import com.revature.models.User;
 import com.revature.models.UserRole;
 import com.revature.utils.HibernateUtil;

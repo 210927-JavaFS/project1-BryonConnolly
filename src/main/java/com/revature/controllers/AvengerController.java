@@ -3,14 +3,14 @@ package com.revature.controllers;
 import java.util.List;
 
 import com.revature.models.Avenger;
-import com.revature.services.AvengerService;
+import com.revature.services.UserService;
 
 import io.javalin.Javalin;
 import io.javalin.http.Handler;
 
 public class AvengerController implements Controller {
 
-	private AvengerService avengerService = new AvengerService();
+	private UserService avengerService = new UserService();
 
 	public Handler getAllAvengers = (ctx) -> {
 		if (ctx.req.getSession(false) != null) {

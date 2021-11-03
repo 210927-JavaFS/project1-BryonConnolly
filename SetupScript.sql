@@ -2,6 +2,12 @@ CREATE TABLE test(bool BOOLEAN);
 
 DROP TABLE IF EXISTS test CASCADE;
 
+create table ReimbursementStatus(
+	statusNumber INTEGER primary key UNIQUE,
+	name VARCHAR(100)
+);
+
+
 /*
 DROP TABLE IF EXISTS accounts CASCADE;
 DROP TABLE IF EXISTS animals;

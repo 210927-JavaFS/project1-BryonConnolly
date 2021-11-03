@@ -1,12 +1,18 @@
 package com.revature.models;
 
+import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +26,12 @@ public class User {
 //	@Column(nullable=false)
 	private String username;
 	private String encrypted_password;
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="id")
 	private UserRole role;
+	@OneToMany(mappedBy="shelf", fetch=FetchType.EAGER)/*mappedBy determines the field that is representing the relationship
+	 fetch determines if the object is pulled direction (EAGER) or if a proxy is returned first (LAZY).*/
+	private List<Reimbursement> reimbursements;
 	
 	
 	// Setup and begin Logging
@@ -33,6 +44,11 @@ public class User {
 	}//end static block
 	
 	
+	public User() {
+		super();
+	}
+
+
 	public User(String username, String encrypted_password, UserRole role) {
 		super();
 		this.username = username;

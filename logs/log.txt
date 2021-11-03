@@ -1,0 +1,940 @@
+08:31:31.037 [] [main] DEBUG com.revature.services.LoginService - In LoginService.encryptPassword(String password)
+08:31:34.702 [] [main] DEBUG com.revature.models.User - Class User loaded into memory
+08:38:10.446 [] [main] DEBUG com.revature.services.LoginService - In LoginService.encryptPassword(String password)
+08:38:14.113 [] [main] DEBUG com.revature.models.User - Class User loaded into memory
+08:38:14.126 [] [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+08:38:14.130 [] [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+08:38:14.131 [] [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+08:38:14.133 [] [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+08:38:14.139 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+08:38:14.139 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+08:38:14.139 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+08:38:14.139 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+08:38:14.139 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+08:38:14.140 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+08:38:14.140 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+08:38:14.140 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+08:38:14.141 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+08:38:14.141 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+08:38:14.141 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+08:38:14.143 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+08:38:14.143 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+08:38:14.143 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+08:38:14.144 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+08:38:14.149 [] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+08:38:14.149 [] [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:38:14.257 [] [main] TRACE o.h.b.r.c.i.ClassLoaderServiceImpl - trying via [new URL("hibernate.cfg.xml")]
+08:38:14.258 [] [main] TRACE o.h.b.r.c.i.ClassLoaderServiceImpl - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+08:38:14.268 [] [main] TRACE o.h.b.j.i.s.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Configuration DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+08:38:14.268 [] [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+08:38:14.268 [] [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+08:38:14.272 [] [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+08:38:14.415 [] [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+08:38:14.419 [] [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+08:38:14.419 [] [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+08:38:14.422 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+08:38:14.425 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+08:38:14.426 [] [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+08:38:14.427 [] [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+08:38:14.437 [] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:38:14.460 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@407cf41
+08:38:14.460 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@407cf41
+08:38:14.460 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@407cf41
+08:38:14.460 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5aceec94
+08:38:14.460 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@3d3f761a
+08:38:14.460 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@452e26d0
+08:38:14.461 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4b629f13
+08:38:14.461 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4b629f13
+08:38:14.461 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4b629f13
+08:38:14.461 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@4263b080
+08:38:14.461 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@4263b080
+08:38:14.461 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4263b080
+08:38:14.462 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5ef8df1e
+08:38:14.462 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5ef8df1e
+08:38:14.462 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5ef8df1e
+08:38:14.463 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@21362712
+08:38:14.463 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@21362712
+08:38:14.463 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@21362712
+08:38:14.463 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@34abdee4
+08:38:14.463 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@34abdee4
+08:38:14.463 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@34abdee4
+08:38:14.464 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@2cd2c8fe
+08:38:14.464 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@2cd2c8fe
+08:38:14.464 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2cd2c8fe
+08:38:14.464 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@5ebd56e9
+08:38:14.464 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@5ebd56e9
+08:38:14.465 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5ebd56e9
+08:38:14.465 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2a492f2a
+08:38:14.465 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2a492f2a
+08:38:14.466 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@76b74e9c
+08:38:14.466 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@76b74e9c
+08:38:14.466 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@23c388c2
+08:38:14.466 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@23c388c2
+08:38:14.467 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4b4dd216
+08:38:14.467 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@35293c05
+08:38:14.467 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@560513ce
+08:38:14.467 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@560513ce
+08:38:14.468 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@10027fc9
+08:38:14.468 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@10027fc9
+08:38:14.475 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@173b9122
+08:38:14.475 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@173b9122
+08:38:14.476 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2449cff7
+08:38:14.476 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2449cff7
+08:38:14.477 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@71e9a896
+08:38:14.477 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@71e9a896
+08:38:14.477 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@fac80
+08:38:14.478 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@fac80
+08:38:14.478 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@57f791c6
+08:38:14.478 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@57f791c6
+08:38:14.479 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@c1fca1e
+08:38:14.479 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@c1fca1e
+08:38:14.481 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@200606de
+08:38:14.481 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@200606de
+08:38:14.482 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6ab72419
+08:38:14.482 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6ab72419
+08:38:14.482 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@443dbe42
+08:38:14.482 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@443dbe42
+08:38:14.483 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@41382722
+08:38:14.483 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@41382722
+08:38:14.483 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@41382722
+08:38:14.484 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@210386e0
+08:38:14.484 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6e33c391
+08:38:14.484 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6e33c391
+08:38:14.484 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6e33c391
+08:38:14.485 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3113a37
+08:38:14.485 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@7db0565c
+08:38:14.485 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@ec2bf82
+08:38:14.485 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@ec2bf82
+08:38:14.486 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5305c37d
+08:38:14.486 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5305c37d
+08:38:14.487 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4d9d1b69
+08:38:14.487 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4d9d1b69
+08:38:14.487 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@781e7326
+08:38:14.487 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@781e7326
+08:38:14.487 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@433ffad1
+08:38:14.487 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@433ffad1
+08:38:14.488 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@ecf9fb3
+08:38:14.488 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@2b46a8c1
+08:38:14.488 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@2b46a8c1
+08:38:14.488 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@2b46a8c1
+08:38:14.488 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@3caa4757
+08:38:14.489 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@3caa4757
+08:38:14.489 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@3caa4757
+08:38:14.489 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@1b39fd82
+08:38:14.489 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@c8b96ec
+08:38:14.490 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5949eba8
+08:38:14.490 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5949eba8
+08:38:14.490 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5949eba8
+08:38:14.490 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7728643a
+08:38:14.490 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7728643a
+08:38:14.491 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7728643a
+08:38:14.491 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@28c0b664
+08:38:14.491 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@436390f4
+08:38:14.492 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@29d2d081
+08:38:14.492 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@29d2d081
+08:38:14.492 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@512d92b
+08:38:14.493 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4d0402b
+08:38:14.493 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4d0402b
+08:38:14.494 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@33a2499c
+08:38:14.494 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@33a2499c
+08:38:14.495 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3c321bdb
+08:38:14.495 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@610db97e
+08:38:14.495 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@6831d8fd
+08:38:14.497 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1e53135d
+08:38:14.497 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1e53135d
+08:38:14.497 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@619bd14c
+08:38:14.497 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@323e8306
+08:38:14.497 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@a23a01d
+08:38:14.497 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4acf72b6
+08:38:14.498 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7561db12
+08:38:14.498 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3301500b
+08:38:14.498 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@24b52d3e
+08:38:14.498 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@15deb1dc
+08:38:14.502 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+08:38:14.511 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+08:38:14.512 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+08:38:14.512 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+08:38:14.513 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+08:38:14.513 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+08:38:14.513 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+08:38:14.513 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+08:38:14.514 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+08:38:14.514 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+08:38:14.515 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+08:38:14.515 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+08:38:14.515 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+08:38:14.515 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+08:38:14.515 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+08:38:14.516 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+08:38:14.516 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+08:38:14.516 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+08:38:14.516 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+08:38:14.517 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+08:38:14.518 [] [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+08:38:14.523 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://project1-database.cixcxydr3vka.us-east-1.rds.amazonaws.com/postgres]
+08:38:14.523 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=password, user=postgres}
+08:38:14.523 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+08:38:14.525 [] [main] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+08:38:14.525 [] [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+08:38:14.984 [] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 12.8
+      major : 12
+      minor : 8
+08:38:14.984 [] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.24
+      major : 42
+      minor : 2
+08:38:14.989 [] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+08:38:14.995 [] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+08:38:15.002 [] [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+08:38:15.061 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [postgres]
+08:38:15.061 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [public]
+08:38:15.085 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+08:38:15.087 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+08:38:15.088 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.088 [] [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=hibernate}, physicalName=Name{catalog=null, schema=hibernate}]
+08:38:15.089 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@280e8a1a
+08:38:15.089 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@280e8a1a
+08:38:15.089 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@433ffad1
+08:38:15.090 [] [main] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@41b0ae4c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@af9a89f]
+08:38:15.107 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.114 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.Reimbursement
+08:38:15.121 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:38:15.121 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:38:15.124 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Reimbursement
+08:38:15.124 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: Reimbursement -> com.revature.models.Reimbursement
+08:38:15.124 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.Reimbursement -> com.revature.models.Reimbursement
+08:38:15.125 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Reimbursement]
+08:38:15.126 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.126 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Reimbursement]
+08:38:15.127 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.Reimbursement on table Reimbursement
+08:38:15.137 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.Reimbursement.id
+08:38:15.139 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.139 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.139 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.Reimbursement), mappingColumn=id, insertable=true, updatable=true, unique=false}
+08:38:15.140 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.Reimbursement] is safe
+08:38:15.140 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.Reimbursement
+08:38:15.141 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+08:38:15.141 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Reimbursement:id]
+08:38:15.142 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+08:38:15.143 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.143 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.143 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.143 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+08:38:15.145 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading id with null
+08:38:15.145 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+08:38:15.145 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+08:38:15.145 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.Reimbursement.status
+08:38:15.146 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:38:15.146 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='statusNumber', referencedColumn='', mappedBy=''}
+08:38:15.146 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [status]
+08:38:15.146 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [status]
+08:38:15.146 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.Reimbursement), mappingColumn=status, insertable=true, updatable=true, unique=false}
+08:38:15.148 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property status
+08:38:15.148 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading status with all
+08:38:15.148 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.Reimbursement.type
+08:38:15.148 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:38:15.148 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='typeNumber', referencedColumn='', mappedBy=''}
+08:38:15.149 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [type]
+08:38:15.149 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [type]
+08:38:15.149 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.Reimbursement), mappingColumn=type, insertable=true, updatable=true, unique=false}
+08:38:15.149 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property type
+08:38:15.149 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading type with all
+08:38:15.149 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.ReimbursementStatus
+08:38:15.150 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:38:15.150 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:38:15.150 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ReimbursementStatus
+08:38:15.150 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: ReimbursementStatus -> com.revature.models.ReimbursementStatus
+08:38:15.150 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.ReimbursementStatus -> com.revature.models.ReimbursementStatus
+08:38:15.150 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementStatus]
+08:38:15.150 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.150 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementStatus]
+08:38:15.150 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.ReimbursementStatus on table ReimbursementStatus
+08:38:15.151 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementStatus.statusNumber
+08:38:15.151 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:38:15.151 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:38:15.151 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=statusNumber, insertable=true, updatable=true, unique=false}
+08:38:15.151 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.ReimbursementStatus] is safe
+08:38:15.151 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.ReimbursementStatus
+08:38:15.151 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property statusNumber with lazy=false
+08:38:15.151 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementStatus:statusNumber]
+08:38:15.151 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for statusNumber
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:38:15.152 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property statusNumber
+08:38:15.152 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading statusNumber with null
+08:38:15.152 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(statusNumber)]), statusNumber, identity, , ...)
+08:38:15.152 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on statusNumber
+08:38:15.152 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementStatus.name
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.152 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=name, insertable=true, updatable=true, unique=false}
+08:38:15.152 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+08:38:15.152 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementStatus:name]
+08:38:15.152 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.152 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+08:38:15.152 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading name with null
+08:38:15.152 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementStatus.reimbursements
+08:38:15.152 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='status'}
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:38:15.152 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:38:15.153 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=reimbursements, insertable=true, updatable=true, unique=false}
+08:38:15.154 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=null, insertable=true, updatable=true, unique=false}
+08:38:15.158 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:38:15.159 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:38:15.159 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=element, insertable=true, updatable=true, unique=false}
+08:38:15.159 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:38:15.159 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=reimbursements_KEY, insertable=true, updatable=true, unique=false}
+08:38:15.159 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:38:15.159 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='reimbursements_KEY', referencedColumn='null', mappedBy='null'}
+08:38:15.159 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='status'}
+08:38:15.159 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='status'}
+08:38:15.159 [] [main] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: com.revature.models.ReimbursementStatus.reimbursements
+08:38:15.160 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reimbursements
+08:38:15.160 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading reimbursements with none
+08:38:15.160 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.ReimbursementType
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:38:15.161 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:38:15.161 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ReimbursementType
+08:38:15.161 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: ReimbursementType -> com.revature.models.ReimbursementType
+08:38:15.161 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.ReimbursementType -> com.revature.models.ReimbursementType
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementType]
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementType]
+08:38:15.161 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.ReimbursementType on table ReimbursementType
+08:38:15.161 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementType.typeNumber
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:38:15.161 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=typeNumber, insertable=true, updatable=true, unique=false}
+08:38:15.161 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.ReimbursementType] is safe
+08:38:15.161 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.ReimbursementType
+08:38:15.161 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property typeNumber with lazy=false
+08:38:15.161 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementType:typeNumber]
+08:38:15.161 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for typeNumber
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:38:15.161 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:38:15.161 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property typeNumber
+08:38:15.161 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading typeNumber with null
+08:38:15.161 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(typeNumber)]), typeNumber, identity, , ...)
+08:38:15.161 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on typeNumber
+08:38:15.162 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementType.name
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=name, insertable=true, updatable=true, unique=false}
+08:38:15.162 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+08:38:15.162 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementType:name]
+08:38:15.162 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.162 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+08:38:15.162 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading name with null
+08:38:15.162 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementType.reimbursements
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type'}
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=reimbursements, insertable=true, updatable=true, unique=false}
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=null, insertable=true, updatable=true, unique=false}
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=element, insertable=true, updatable=true, unique=false}
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=reimbursements_KEY, insertable=true, updatable=true, unique=false}
+08:38:15.162 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='reimbursements_KEY', referencedColumn='null', mappedBy='null'}
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type'}
+08:38:15.162 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type'}
+08:38:15.162 [] [main] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: com.revature.models.ReimbursementType.reimbursements
+08:38:15.162 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reimbursements
+08:38:15.163 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading reimbursements with none
+08:38:15.163 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.User
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:38:15.163 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:38:15.163 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name User
+08:38:15.163 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: User -> com.revature.models.User
+08:38:15.163 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.User -> com.revature.models.User
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [User]
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [User]
+08:38:15.163 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.User on table User
+08:38:15.163 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.id
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.163 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=id, insertable=true, updatable=true, unique=false}
+08:38:15.163 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.User] is safe
+08:38:15.163 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.User
+08:38:15.163 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+08:38:15.163 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:id]
+08:38:15.163 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.163 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.163 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+08:38:15.164 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading id with null
+08:38:15.164 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+08:38:15.164 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+08:38:15.164 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.encrypted_password
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:38:15.164 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=encrypted_password, insertable=true, updatable=true, unique=false}
+08:38:15.164 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property encrypted_password with lazy=false
+08:38:15.164 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:encrypted_password]
+08:38:15.164 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for encrypted_password
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:38:15.164 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property encrypted_password
+08:38:15.164 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading encrypted_password with null
+08:38:15.164 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.role
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:38:15.164 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=role, insertable=true, updatable=true, unique=false}
+08:38:15.164 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property role with lazy=false
+08:38:15.164 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:role]
+08:38:15.164 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for role
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:38:15.164 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property role
+08:38:15.164 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading role with null
+08:38:15.164 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.username
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:38:15.164 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=username, insertable=true, updatable=true, unique=false}
+08:38:15.164 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property username with lazy=false
+08:38:15.164 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:username]
+08:38:15.164 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for username
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:38:15.164 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:38:15.164 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property username
+08:38:15.164 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading username with null
+08:38:15.164 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.UserRole
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:38:15.165 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:38:15.165 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name UserRole
+08:38:15.165 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: UserRole -> com.revature.models.UserRole
+08:38:15.165 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.UserRole -> com.revature.models.UserRole
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [UserRole]
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [UserRole]
+08:38:15.165 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.UserRole on table UserRole
+08:38:15.165 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.UserRole.id
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.165 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.UserRole), mappingColumn=id, insertable=true, updatable=true, unique=false}
+08:38:15.165 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.UserRole] is safe
+08:38:15.165 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.UserRole
+08:38:15.165 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+08:38:15.165 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.UserRole:id]
+08:38:15.165 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:38:15.165 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+08:38:15.165 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading id with null
+08:38:15.165 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+08:38:15.165 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+08:38:15.165 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.UserRole.name
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.165 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.165 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.UserRole), mappingColumn=name, insertable=true, updatable=true, unique=false}
+08:38:15.165 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+08:38:15.165 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.UserRole:name]
+08:38:15.165 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+08:38:15.166 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.166 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.166 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:38:15.166 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+08:38:15.166 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading name with null
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for statusNumber
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for typeNumber
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for encrypted_password
+08:38:15.166 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for role
+08:38:15.166 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.UserRole] is safe
+08:38:15.166 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.UserRole
+08:38:15.167 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for username
+08:38:15.167 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+08:38:15.167 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+08:38:15.167 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://project1-database.cixcxydr3vka.us-east-1.rds.amazonaws.com/postgres]
+08:38:15.169 [] [main] DEBUG o.h.b.r.i.BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+08:44:04.983 [] [main] DEBUG com.revature.services.LoginService - In LoginService.encryptPassword(String password)
+08:44:08.723 [] [main] DEBUG com.revature.models.User - Class User loaded into memory
+08:44:08.736 [] [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+08:44:08.740 [] [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+08:44:08.741 [] [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+08:44:08.743 [] [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+08:44:08.749 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+08:44:08.749 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+08:44:08.749 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+08:44:08.749 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+08:44:08.749 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+08:44:08.750 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+08:44:08.750 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+08:44:08.750 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+08:44:08.751 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+08:44:08.751 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+08:44:08.751 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+08:44:08.753 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+08:44:08.753 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+08:44:08.753 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+08:44:08.753 [] [main] TRACE o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+08:44:08.758 [] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+08:44:08.759 [] [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:44:08.866 [] [main] TRACE o.h.b.r.c.i.ClassLoaderServiceImpl - trying via [new URL("hibernate.cfg.xml")]
+08:44:08.866 [] [main] TRACE o.h.b.r.c.i.ClassLoaderServiceImpl - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+08:44:08.874 [] [main] TRACE o.h.b.j.i.s.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Configuration DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+08:44:08.874 [] [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+08:44:08.874 [] [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+08:44:08.878 [] [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+08:44:09.023 [] [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+08:44:09.026 [] [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+08:44:09.026 [] [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+08:44:09.029 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+08:44:09.032 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+08:44:09.033 [] [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+08:44:09.034 [] [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+08:44:09.044 [] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:44:09.066 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@407cf41
+08:44:09.066 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@407cf41
+08:44:09.066 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@407cf41
+08:44:09.067 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5aceec94
+08:44:09.067 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@3d3f761a
+08:44:09.067 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@452e26d0
+08:44:09.068 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4b629f13
+08:44:09.068 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4b629f13
+08:44:09.068 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4b629f13
+08:44:09.068 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@4263b080
+08:44:09.068 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@4263b080
+08:44:09.068 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4263b080
+08:44:09.069 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5ef8df1e
+08:44:09.069 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5ef8df1e
+08:44:09.069 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5ef8df1e
+08:44:09.070 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@21362712
+08:44:09.070 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@21362712
+08:44:09.070 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@21362712
+08:44:09.070 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@34abdee4
+08:44:09.071 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@34abdee4
+08:44:09.071 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@34abdee4
+08:44:09.071 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@2cd2c8fe
+08:44:09.071 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@2cd2c8fe
+08:44:09.071 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2cd2c8fe
+08:44:09.072 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@5ebd56e9
+08:44:09.072 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@5ebd56e9
+08:44:09.072 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5ebd56e9
+08:44:09.072 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2a492f2a
+08:44:09.072 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2a492f2a
+08:44:09.073 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@76b74e9c
+08:44:09.073 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@76b74e9c
+08:44:09.073 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@23c388c2
+08:44:09.073 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@23c388c2
+08:44:09.073 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4b4dd216
+08:44:09.074 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@35293c05
+08:44:09.074 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@560513ce
+08:44:09.074 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@560513ce
+08:44:09.075 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@10027fc9
+08:44:09.075 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@10027fc9
+08:44:09.082 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@173b9122
+08:44:09.082 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@173b9122
+08:44:09.083 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2449cff7
+08:44:09.083 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2449cff7
+08:44:09.084 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@71e9a896
+08:44:09.084 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@71e9a896
+08:44:09.085 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@fac80
+08:44:09.085 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@fac80
+08:44:09.085 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@57f791c6
+08:44:09.085 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@57f791c6
+08:44:09.086 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@c1fca1e
+08:44:09.086 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@c1fca1e
+08:44:09.088 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@200606de
+08:44:09.088 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@200606de
+08:44:09.088 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6ab72419
+08:44:09.088 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6ab72419
+08:44:09.089 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@443dbe42
+08:44:09.089 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@443dbe42
+08:44:09.090 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@41382722
+08:44:09.090 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@41382722
+08:44:09.090 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@41382722
+08:44:09.091 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@210386e0
+08:44:09.091 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6e33c391
+08:44:09.091 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6e33c391
+08:44:09.091 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6e33c391
+08:44:09.091 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3113a37
+08:44:09.092 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@7db0565c
+08:44:09.092 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@ec2bf82
+08:44:09.092 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@ec2bf82
+08:44:09.093 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5305c37d
+08:44:09.093 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5305c37d
+08:44:09.094 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4d9d1b69
+08:44:09.094 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4d9d1b69
+08:44:09.094 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@781e7326
+08:44:09.094 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@781e7326
+08:44:09.094 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@433ffad1
+08:44:09.094 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@433ffad1
+08:44:09.095 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@ecf9fb3
+08:44:09.095 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@2b46a8c1
+08:44:09.095 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@2b46a8c1
+08:44:09.095 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@2b46a8c1
+08:44:09.096 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@3caa4757
+08:44:09.096 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@3caa4757
+08:44:09.096 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@3caa4757
+08:44:09.096 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@1b39fd82
+08:44:09.096 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@c8b96ec
+08:44:09.097 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5949eba8
+08:44:09.097 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5949eba8
+08:44:09.097 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5949eba8
+08:44:09.097 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7728643a
+08:44:09.097 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7728643a
+08:44:09.097 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7728643a
+08:44:09.098 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@28c0b664
+08:44:09.098 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@436390f4
+08:44:09.099 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@29d2d081
+08:44:09.099 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@29d2d081
+08:44:09.099 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@512d92b
+08:44:09.100 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4d0402b
+08:44:09.100 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4d0402b
+08:44:09.101 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@33a2499c
+08:44:09.101 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@33a2499c
+08:44:09.101 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3c321bdb
+08:44:09.101 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@610db97e
+08:44:09.102 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@6831d8fd
+08:44:09.103 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1e53135d
+08:44:09.103 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1e53135d
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@619bd14c
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@323e8306
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@a23a01d
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4acf72b6
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7561db12
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3301500b
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@24b52d3e
+08:44:09.104 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@15deb1dc
+08:44:09.109 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+08:44:09.117 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+08:44:09.118 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+08:44:09.119 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+08:44:09.119 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+08:44:09.119 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+08:44:09.119 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+08:44:09.119 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+08:44:09.120 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+08:44:09.120 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+08:44:09.121 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+08:44:09.121 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+08:44:09.121 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+08:44:09.121 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+08:44:09.121 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+08:44:09.122 [] [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+08:44:09.122 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+08:44:09.122 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+08:44:09.122 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+08:44:09.123 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+08:44:09.124 [] [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+08:44:09.128 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://project1-database.cixcxydr3vka.us-east-1.rds.amazonaws.com/postgres]
+08:44:09.128 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=password, user=postgres}
+08:44:09.128 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+08:44:09.130 [] [main] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+08:44:09.130 [] [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+08:44:09.588 [] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 12.8
+      major : 12
+      minor : 8
+08:44:09.588 [] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.24
+      major : 42
+      minor : 2
+08:44:09.589 [] [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+08:44:09.600 [] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+08:44:09.607 [] [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+08:44:09.670 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [postgres]
+08:44:09.670 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [public]
+08:44:09.694 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+08:44:09.696 [] [main] TRACE o.h.s.i.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+08:44:09.697 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.697 [] [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=hibernate}, physicalName=Name{catalog=null, schema=hibernate}]
+08:44:09.698 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@280e8a1a
+08:44:09.698 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@280e8a1a
+08:44:09.698 [] [main] DEBUG org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@433ffad1
+08:44:09.699 [] [main] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@41b0ae4c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@af9a89f]
+08:44:09.716 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.722 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.Reimbursement
+08:44:09.730 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:44:09.730 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:44:09.732 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Reimbursement
+08:44:09.732 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: Reimbursement -> com.revature.models.Reimbursement
+08:44:09.732 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.Reimbursement -> com.revature.models.Reimbursement
+08:44:09.733 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Reimbursement]
+08:44:09.734 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.734 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [Reimbursement]
+08:44:09.735 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.Reimbursement on table Reimbursement
+08:44:09.745 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.Reimbursement.id
+08:44:09.747 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.747 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.747 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.Reimbursement), mappingColumn=id, insertable=true, updatable=true, unique=false}
+08:44:09.748 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.Reimbursement] is safe
+08:44:09.748 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.Reimbursement
+08:44:09.749 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+08:44:09.749 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.Reimbursement:id]
+08:44:09.750 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+08:44:09.751 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.751 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.751 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.751 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+08:44:09.752 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading id with null
+08:44:09.753 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+08:44:09.753 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+08:44:09.753 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.Reimbursement.status
+08:44:09.754 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:44:09.754 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='statusNumber', referencedColumn='', mappedBy=''}
+08:44:09.754 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [status]
+08:44:09.754 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [status]
+08:44:09.754 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.Reimbursement), mappingColumn=status, insertable=true, updatable=true, unique=false}
+08:44:09.755 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property status
+08:44:09.756 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading status with all
+08:44:09.756 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.Reimbursement.type
+08:44:09.756 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:44:09.756 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='typeNumber', referencedColumn='', mappedBy=''}
+08:44:09.756 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [type]
+08:44:09.756 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [type]
+08:44:09.756 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.Reimbursement), mappingColumn=type, insertable=true, updatable=true, unique=false}
+08:44:09.756 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property type
+08:44:09.756 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading type with all
+08:44:09.757 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.ReimbursementStatus
+08:44:09.757 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:44:09.757 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:44:09.757 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ReimbursementStatus
+08:44:09.757 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: ReimbursementStatus -> com.revature.models.ReimbursementStatus
+08:44:09.757 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.ReimbursementStatus -> com.revature.models.ReimbursementStatus
+08:44:09.757 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementStatus]
+08:44:09.757 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.757 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementStatus]
+08:44:09.757 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.ReimbursementStatus on table ReimbursementStatus
+08:44:09.759 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementStatus.statusNumber
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:44:09.759 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=statusNumber, insertable=true, updatable=true, unique=false}
+08:44:09.759 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.ReimbursementStatus] is safe
+08:44:09.759 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.ReimbursementStatus
+08:44:09.759 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property statusNumber with lazy=false
+08:44:09.759 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementStatus:statusNumber]
+08:44:09.759 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for statusNumber
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [statusNumber]
+08:44:09.759 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property statusNumber
+08:44:09.759 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading statusNumber with null
+08:44:09.759 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(statusNumber)]), statusNumber, identity, , ...)
+08:44:09.759 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on statusNumber
+08:44:09.759 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementStatus.name
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.759 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.759 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=name, insertable=true, updatable=true, unique=false}
+08:44:09.760 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+08:44:09.760 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementStatus:name]
+08:44:09.760 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+08:44:09.760 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.760 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.760 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.760 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+08:44:09.760 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading name with null
+08:44:09.760 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementStatus.reimbursements
+08:44:09.760 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='status'}
+08:44:09.760 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:44:09.760 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:44:09.760 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=reimbursements, insertable=true, updatable=true, unique=false}
+08:44:09.761 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=null, insertable=true, updatable=true, unique=false}
+08:44:09.765 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:44:09.765 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:44:09.765 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=element, insertable=true, updatable=true, unique=false}
+08:44:09.765 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:44:09.765 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementStatus), mappingColumn=reimbursements_KEY, insertable=true, updatable=true, unique=false}
+08:44:09.765 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:44:09.765 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='reimbursements_KEY', referencedColumn='null', mappedBy='null'}
+08:44:09.766 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='status'}
+08:44:09.766 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='status'}
+08:44:09.766 [] [main] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: com.revature.models.ReimbursementStatus.reimbursements
+08:44:09.767 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reimbursements
+08:44:09.767 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading reimbursements with none
+08:44:09.767 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.ReimbursementType
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:44:09.767 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:44:09.767 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ReimbursementType
+08:44:09.767 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: ReimbursementType -> com.revature.models.ReimbursementType
+08:44:09.767 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.ReimbursementType -> com.revature.models.ReimbursementType
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementType]
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ReimbursementType]
+08:44:09.767 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.ReimbursementType on table ReimbursementType
+08:44:09.767 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementType.typeNumber
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:44:09.767 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=typeNumber, insertable=true, updatable=true, unique=false}
+08:44:09.767 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.ReimbursementType] is safe
+08:44:09.767 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.ReimbursementType
+08:44:09.767 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property typeNumber with lazy=false
+08:44:09.767 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementType:typeNumber]
+08:44:09.767 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for typeNumber
+08:44:09.767 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [typeNumber]
+08:44:09.768 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property typeNumber
+08:44:09.768 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading typeNumber with null
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(typeNumber)]), typeNumber, identity, , ...)
+08:44:09.768 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on typeNumber
+08:44:09.768 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementType.name
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=name, insertable=true, updatable=true, unique=false}
+08:44:09.768 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+08:44:09.768 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.ReimbursementType:name]
+08:44:09.768 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.768 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+08:44:09.768 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading name with null
+08:44:09.768 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.ReimbursementType.reimbursements
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type'}
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements]
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=reimbursements, insertable=true, updatable=true, unique=false}
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=null, insertable=true, updatable=true, unique=false}
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [element]
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=element, insertable=true, updatable=true, unique=false}
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.ReimbursementType), mappingColumn=reimbursements_KEY, insertable=true, updatable=true, unique=false}
+08:44:09.768 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [reimbursements_KEY]
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='reimbursements_KEY', referencedColumn='null', mappedBy='null'}
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type'}
+08:44:09.768 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type'}
+08:44:09.768 [] [main] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: com.revature.models.ReimbursementType.reimbursements
+08:44:09.768 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reimbursements
+08:44:09.768 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading reimbursements with none
+08:44:09.769 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.User
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:44:09.769 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:44:09.769 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name User
+08:44:09.769 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: User -> com.revature.models.User
+08:44:09.769 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.User -> com.revature.models.User
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [User]
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [User]
+08:44:09.769 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.User on table User
+08:44:09.769 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.id
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.769 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=id, insertable=true, updatable=true, unique=false}
+08:44:09.769 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.User] is safe
+08:44:09.769 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.User
+08:44:09.769 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+08:44:09.769 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:id]
+08:44:09.769 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.769 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.769 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+08:44:09.769 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading id with null
+08:44:09.769 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+08:44:09.769 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+08:44:09.769 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.encrypted_password
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:44:09.770 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=encrypted_password, insertable=true, updatable=true, unique=false}
+08:44:09.770 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property encrypted_password with lazy=false
+08:44:09.770 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:encrypted_password]
+08:44:09.770 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for encrypted_password
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [encrypted_password]
+08:44:09.770 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property encrypted_password
+08:44:09.770 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading encrypted_password with null
+08:44:09.770 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.role
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:44:09.770 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=role, insertable=true, updatable=true, unique=false}
+08:44:09.770 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property role with lazy=false
+08:44:09.770 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:role]
+08:44:09.770 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for role
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [role]
+08:44:09.770 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property role
+08:44:09.770 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading role with null
+08:44:09.770 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.User.username
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:44:09.770 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.User), mappingColumn=username, insertable=true, updatable=true, unique=false}
+08:44:09.770 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property username with lazy=false
+08:44:09.770 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.User:username]
+08:44:09.770 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for username
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [username]
+08:44:09.770 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property username
+08:44:09.770 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading username with null
+08:44:09.770 [] [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.revature.models.UserRole
+08:44:09.770 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+08:44:09.770 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+08:44:09.771 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name UserRole
+08:44:09.771 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: UserRole -> com.revature.models.UserRole
+08:44:09.771 [] [main] TRACE o.h.b.i.InFlightMetadataCollectorImpl - Import: com.revature.models.UserRole -> com.revature.models.UserRole
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [UserRole]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [hibernate]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [UserRole]
+08:44:09.771 [] [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.revature.models.UserRole on table UserRole
+08:44:09.771 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.UserRole.id
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.771 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.UserRole), mappingColumn=id, insertable=true, updatable=true, unique=false}
+08:44:09.771 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.UserRole] is safe
+08:44:09.771 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.UserRole
+08:44:09.771 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+08:44:09.771 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.UserRole:id]
+08:44:09.771 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+08:44:09.771 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+08:44:09.771 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading id with null
+08:44:09.771 [] [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+08:44:09.771 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+08:44:09.771 [] [main] TRACE org.hibernate.cfg.AnnotationBinder - Processing annotations of com.revature.models.UserRole.name
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.771 [] [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(hibernate.UserRole), mappingColumn=name, insertable=true, updatable=true, unique=false}
+08:44:09.771 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+08:44:09.771 [] [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.revature.models.UserRole:name]
+08:44:09.771 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.771 [] [main] TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [name]
+08:44:09.771 [] [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+08:44:09.771 [] [main] TRACE o.h.cfg.annotations.PropertyBinder - Cascading name with null
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for statusNumber
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for typeNumber
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for encrypted_password
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for role
+08:44:09.772 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.revature.models.UserRole] is safe
+08:44:09.772 [] [main] DEBUG o.h.b.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.models.UserRole
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for username
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+08:44:09.772 [] [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+08:44:09.773 [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://project1-database.cixcxydr3vka.us-east-1.rds.amazonaws.com/postgres]
+08:44:09.774 [] [main] DEBUG o.h.b.r.i.BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

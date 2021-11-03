@@ -7,15 +7,17 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.revature.Driver;
 import com.revature.models.User;
 import com.revature.models.UserDTO;
+import com.revature.repositories.UserDAO;
+import com.revature.repositories.UserDAOImplementation;
 
 public class LoginService {
 	
-	private UserDAO userDao = new UserDAO();
+	private UserDAO userDao = new UserDAOImplementation();
 	
 	private static Logger log = LoggerFactory.getLogger(LoginService.class.getName());
 
 	public boolean login(UserDTO userDto) {
-		User user = userDao.getByUsername(userDto.username);
+		User user = userDao.findByUsername(userDto.username);
 		
 //		if(user!=null && (userDto.password.hashCode()==user.getPassword())) {
 //			return true;
@@ -29,7 +31,7 @@ public class LoginService {
 	}
 	
 	
-	boolean checkPassword(User user, String password) {
+	public boolean checkPassword(User user, String password) {
 		
 		log.debug("In LoginService.checkPassword(User,Password)");
 		log.debug("user.getEncryptedPassword() = "+user.getEncrypted_password());
@@ -45,7 +47,7 @@ public class LoginService {
 		}
 	}//end checkPassword
 	
-	String encryptPassword(String password) {
+	public String encryptPassword(String password) {
 		log.debug("In LoginService.encryptPassword(String password)");
 		
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(16);

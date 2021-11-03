@@ -2,73 +2,67 @@ package com.revature.repositories;
 
 import java.util.List;
 
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
-
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.revature.models.Book;
+import com.revature.models.Language;
 import com.revature.utils.HibernateUtil;
 
 public class BookDAOImpl implements BookDAO {
 
 	@Override
-	public List<Book> getAllBooks() {
+	public List<Book> findAll() {
 		Session session = HibernateUtil.getSession();
-		
-		List<Book> list;
-		
-		CriteriaBuilder critBuilder = session.getCriteriaBuilder();
-		CriteriaQuery<Book> query = critBuilder.createQuery(Book.class);
-		Root<Book> root = query.from(Book.class);
-		CriteriaQuery<Book> allBooks = query.select(root);
-		TypedQuery<Book> typed = session.createQuery(allBooks);
-
-		list = typed.getResultList();
+		List<Book> list = session.createQuery("FROM Book").list();
+		HibernateUtil.closeSession();
 		return list;
 	}
 
 	@Override
-	public Book getBookByISBN(int ISBN) {
+	public Book findById(int id) {
 		Session session = HibernateUtil.getSession();
-		Book book = session.get(Book.class, ISBN);
+		Book book = session.get(Book.class, id);
+		HibernateUtil.closeSession();
 		return book;
 	}
 
 	@Override
-	public void insert(Book book) {
+	public boolean updateBook(Book book) {
 		Session session = HibernateUtil.getSession();
-		Transaction tx = session.beginTransaction();
-		Object obj = session.save(book);
-		System.out.println(obj);
-		tx.commit();
-		HibernateUtil.closeSession();
+		try {
+			Transaction tx = session.beginTransaction();
+			session.merge(book);
+			tx.commit();
+			return true;
+		} catch (HibernateException e) {
+			return false;
+		} finally {
+			HibernateUtil.closeSession();
+		}
 	}
 
 	@Override
-	public void update(Book book) {
+	public boolean insert(Book book) {
 		Session session = HibernateUtil.getSession();
-		Transaction tx = session.beginTransaction();
-		session.merge(book);
-		tx.commit();
-		//HibernateUtil.closeSession();
-		
-		
-
+		try {
+			Transaction tx = session.beginTransaction();
+			session.save(book);
+			tx.commit();
+			return true;
+		} catch (HibernateException e) {
+			return false;
+		} finally {
+			HibernateUtil.closeSession();
+		}
 	}
-
-	@Override
-	public void delete(Book book) {
-		Session session = HibernateUtil.getSession();
-		Transaction tx = session.beginTransaction();
-		session.delete(book);
-		tx.commit();
-		HibernateUtil.closeSession();
-	}
-
 	
+	public Language getLanguage(int id) {
+		Session session = HibernateUtil.getSession();
+		Language lang = session.get(Language.class, id);
+		HibernateUtil.closeSession();
+		return lang;
+	}
 
 }

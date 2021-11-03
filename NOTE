@@ -1,0 +1,132 @@
+
+see hellow swapi example mondat nov 1 java script json fetch etc
+
+
+see jackson 
+
+DTO = data transfer object
+see week 4 Heelo full stack user login object
+
+
+
+hibernate project steps:
+
+work from his example code
+Extra Hibernate demo for mapping
+
+-first need hibernate configujration file
+-new hibernate database
+-or dbeaver to delete tables
+
+-could do: a log back xml file to turn off debug notifications 
+
+Next hibernate util (copy as is)
+next each model (each based on the diagram)
+
+	class
+	give it entity annotation
+	list of data member
+		(regular java OOP stuff here, exactlyh accorind to diagram)
+	standard boilerplates,  getters setter, etc
+	add @ID annotation
+	@GeratedValue(stategy = GenerationType.IDENTITY)
+	on private int id;
+	
+	on author:
+	@ManyToOne(fetch = FetchType.EEAGER, cascade= CascadeType.ALL) 	
+		
+		on genre
+		same@ManyToOne(fetch = FetchType.EEAGER, cascade= CascadeType.ALL) 
+		
+		publication langauge=same
+		@ManyToOne(fetch = FetchType.EEAGER, cascade= CascadeType.ALL) 	
+		
+		note he did fetch type EAGER on all and Cascade type ALL on all
+		until soemone asked questions and he is tring MERGE, but not fusrt choise
+		
+	then next class AZUTHO
+@Enitity tag
+public class Author
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	pri int id
+	prio String name
+	po s name
+	p int year born
+	@ManyToOne(fetch= FetchType.EAGER)
+	p l;angujage native language
+	
+	//um mhe always wants to be able to get all book by author
+	@OneToMany
+	priavte List<Book> bibliography;
+	
+*not @Id is the primary key
+
+now DAOs / repos
+
+1st interfaces (no annotations / same as last projecty)
+
+Next implemetent them:  (code start auto generated)
+		public find all (exaMple)
+		(see:) Session session= HibernateUtil.getSession();
+				List<Author> list = session.createQuery("FROM AUTHOR").list();
+				HibernateUtil.closeSession();
+				return list;
+		next see find by id (in auth dao imp)		
+				Autohor author = sessions.get(Author.class,id);
+			
+		next see updateAuthor
+			session.merge(author);	
+
+	q	next see find by name author for slightly more complex SQL query
+	
+* can only use session.get  get for priomary key
+otherwise need HQL
+
+
+Book Impl mostly the same
+
+	
+*** next DAOTEST
+
+create DaoTest class******
+first need to createtables and some Genres and languages in the database
+	so too dbeaver....(not sure maybe dont need dbeaver setup first)
+	nevermind...and back to AuthorDao and it IMPL
+	to add insert ****************************************
+	Author and BOok add insert******************************
+	uses session.save(author/book)
+	
+	now add inserts to the DAO Test class
+	
+	The hard parts so far, in here
+	 
+	*****now add the enties to the hibernate config file
+	<mapping class="com.revature.models.Language"></mapping>
+	Cc
+	cc
+	cc
+	
+	
+	in dbeaver he had problems so he added the 
+	genre and languages "the bad way" ie manually in dbeaver (but it
+	looks like they should have been added in the code)
+	so he commented out inserts of DaoTets
+	and added a new way
+	
+	so yeah, I can add things in sdbeaver if need to but not best
+	
+	
+	
+	
+	
+	also session.setParam and things like thgat for ueses
+	
+	
+	--------
+	see notes in discord for ec2 setup inc openjdk, maven, git, jenkins and more?
+	 
+	
+
+
+			

@@ -3,8 +3,8 @@ package com.revature.services;
 import java.util.List;
 
 import com.revature.models.Home;
-import com.revature.repos.HomeDAO;
-import com.revature.repos.HomeDAOImpl;
+import com.revature.repositories.HomeDAO;
+import com.revature.repositories.HomeDAOImpl;
 
 public class HomeService {
 

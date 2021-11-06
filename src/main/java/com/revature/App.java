@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import com.revature.controllers.AvengerController;
 import com.revature.controllers.Controller;
 import com.revature.controllers.HomeController;
+import com.revature.controllers.LoginController;
 import com.revature.controllers.UserController;
 
 import io.javalin.Javalin;
@@ -18,8 +19,6 @@ public class App {
 		log.debug("Class App loaded into memory");
 	}
 	
-	
-	
 	private static Javalin app;
 
 	public static void main(String[] args) {
@@ -27,7 +26,7 @@ public class App {
 			config.addStaticFiles("/static", Location.CLASSPATH);
 		});
 		
-		configure(new HomeController(), new AvengerController(), new UserController());
+		configure(new HomeController(), new AvengerController(), new LoginController(), new UserController());
 		
 		app.start(8081);
 

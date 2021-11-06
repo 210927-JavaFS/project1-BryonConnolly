@@ -11,16 +11,6 @@ public class LoginService {
 	
 	private UserDAO userDao = new UserDAO();
 	
-//	public boolean login(UserDTO userDto) {
-//		User user = userDao.getByUsername(userDto.username);
-//		
-//		if(user!=null && (userDto.password.hashCode()==user.getPassword())) {
-//			return true;
-//		}
-//		
-//		return false;
-//	}
-
 	private static Logger log = LoggerFactory.getLogger(LoginService.class.getName());
 
 	public boolean login(UserDTO userDto) {
@@ -41,29 +31,18 @@ public class LoginService {
 	public boolean checkPassword(User user, String password) {
 		
 		log.debug("In LoginService.checkPassword(User,Password)");
-		log.debug("user.getEncryptedPassword() = "+user.getPassword());
+		log.debug("user.getEncryptedPassword() = "+user.getEncryptedPassword());
 		log.debug("parameter arg password is : "+password);
 		
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(16);
 				
-		if(encoder.matches(password, user.getPassword()))
+		if(encoder.matches(password, user.getEncryptedPassword()))
 			return true;
 		else {
 			System.out.println("password does not match");
 			return false;
 		}
 	}//end checkPassword
-	
-	public String encryptPassword(String password) {
-		log.debug("In LoginService.encryptPassword(String password)");
-		
-		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(16);
-		return encoder.encode(password);
-		
-	}
-		
-	
-	
 	
 	
 }

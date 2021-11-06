@@ -9,45 +9,45 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import com.revature.models.UserWAS;
+import com.revature.models.User;
 import com.revature.models.UserRole;
 import com.revature.utils.HibernateUtil;
 
 public class UserDAOImplementation implements UserDAO{
 
 	@Override
-	public List<UserWAS> findAll() {
+	public List<User> findAll() {
 		Session session = HibernateUtil.getSession();
-		List<UserWAS> list = session.createQuery("FROM User").list();
+		List<User> list = session.createQuery("FROM User").list();
 		HibernateUtil.closeSession();
 		return list;
 	}
 
 	@Override
-	public UserWAS findById(int id) {
+	public User findById(int id) {
 		Session session = HibernateUtil.getSession();
-		UserWAS user = session.get(UserWAS.class, id);
+		User user = session.get(User.class, id);
 		HibernateUtil.closeSession();
 		return user;
 	}
 
 
 	@Override
-	public UserWAS findByUsername(String username) {
+	public User findByUsername(String username) {
 		Session session = HibernateUtil.getSession();
 		 Query query = session.createQuery("FROM User WHERE username = ?");
 		 query.setParameter(1, username);
-		 List<UserWAS> list	=	query.list();
+		 List<User> list	=	query.list();
 		HibernateUtil.closeSession();
 		return list.get(0);    //Todo this is from example but maybe should ensure no duplicate usernames and give error if so
 	}
 
 	@Override
-	public UserWAS findByUsername(UserWAS user) {
+	public User findByUsername(User user) {
 		Session session = HibernateUtil.getSession();
 		 Query query = session.createQuery("FROM User WHERE username = ?");
 		 query.setParameter(1, user.getUsername());
-		 List<UserWAS> list	=	query.list();
+		 List<User> list	=	query.list();
 		user = list.get(0);    //Todo this is from example but maybe should ensure no duplicate usernames and give error if so
 		HibernateUtil.closeSession();
 		return user;
@@ -64,7 +64,7 @@ public class UserDAOImplementation implements UserDAO{
 	
 	
 	@Override
-	public boolean addUser(UserWAS user) {
+	public boolean addUser(User user) {
 		try {
 			Session session = HibernateUtil.getSession();
 			Transaction tx = session.beginTransaction();
@@ -79,7 +79,7 @@ public class UserDAOImplementation implements UserDAO{
 	}
 
 	@Override
-	public boolean updateUser(UserWAS user) {
+	public boolean updateUser(User user) {
 		Session session = HibernateUtil.getSession();
 		try {
 			Transaction tx = session.beginTransaction();
@@ -94,7 +94,7 @@ public class UserDAOImplementation implements UserDAO{
 	}
 
 	@Override
-	public boolean deleteUser(UserWAS user) {
+	public boolean deleteUser(User user) {
 		try {
 			Session session = HibernateUtil.getSession();
 			Transaction tx = session.beginTransaction();

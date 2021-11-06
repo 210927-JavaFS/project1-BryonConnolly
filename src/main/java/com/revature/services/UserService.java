@@ -2,7 +2,7 @@ package com.revature.services;
 
 import java.util.List;
 
-import com.revature.models.UserWAS;
+import com.revature.models.User;
 import com.revature.repos.UserDAO;
 import com.revature.repos.UserDAOImplementation;
 
@@ -10,58 +10,57 @@ public class UserService {
 	
 	private UserDAO userDao = new UserDAOImplementation();
 	
-	public List<UserWAS> getAllUsers() {
+	public List<User> getAllUsers() {
 		return userDao.findAll();
 	}
 
-	public UserWAS getUser(int id) {
-		UserWAS user = userDao.findById(id);
+	public User getUser(int id) {
+		User user = userDao.findById(id);
 		if (user != null) {
 			return user;
 		}else {
-			return new UserWAS();
+			return new User();
 		}
 	}
 	
-	public UserWAS getUser(UserWAS user) {
-		UserWAS founduser = userDao.findByUsername(user.getUsername());
+	public User getUser(User user) {
+		User founduser = userDao.findByUsername(user.getUsername());
 		if (founduser != null) {
 			return founduser;
 		}else {
-			return new UserWAS();
+			return new User();
 		}
 	}
 	
-	public UserWAS getUser(String username) {
-		UserWAS user = userDao.findByUsername(username);
+	public User getUser(String username) {
+		User user = userDao.findByUsername(username);
 		if (user != null) {
 			return user;
 		}else {
-			return new UserWAS();
+			return new User();
 		}
 	}
 	
 	
-	
-	public boolean addUser(UserWAS user) {
+	public boolean addUser(User user) {
 		return userDao.addUser(user);
 	}
 	
-	public boolean updateUser(UserWAS user) {
+	public boolean updateUser(User user) {
 		return userDao.updateUser(user);
 	}
 	
 	public boolean deleteUser(int id) {
-		UserWAS user = getUser(id);
+		User user = getUser(id);
 		return userDao.deleteUser(user);
 	}
 	
-	public boolean deleteUser(UserWAS user) {
+	public boolean deleteUser(User user) {
 		return userDao.deleteUser(user);
 	}
 	
 	public boolean deleteUser(String username) {
-		UserWAS user = getUser(username);
+		User user = getUser(username);
 		return userDao.deleteUser(user);
 	}
 	

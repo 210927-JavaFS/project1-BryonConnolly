@@ -19,13 +19,7 @@ public class Reimbursement {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-	@JoinColumn(name="typeNumber")
 	private int type;
-	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-	@JoinColumn(name="statusNumber")
 	private int status;
 
 	public Reimbursement(int id, int type, int status) {

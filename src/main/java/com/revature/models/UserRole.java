@@ -10,21 +10,14 @@ import javax.persistence.Id;
 public class UserRole {
 	
 	@Id
-	private int id;
 	private String name;
-	public UserRole(int id, String name) {
+	
+	public UserRole(String name) {
 		super();
-		this.id = id;
 		this.name = name;
 	}
 	public UserRole() {
 		super();
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -34,11 +27,11 @@ public class UserRole {
 	}
 	@Override
 	public String toString() {
-		return "UserRole [id=" + id + ", name=" + name + "]";
+		return "UserRole [name=" + name + "]";
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, name);
+		return Objects.hash(name);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -49,7 +42,7 @@ public class UserRole {
 		if (getClass() != obj.getClass())
 			return false;
 		UserRole other = (UserRole) obj;
-		return id == other.id && Objects.equals(name, other.name);
+		return Objects.equals(name, other.name);
 	}
 	
 	

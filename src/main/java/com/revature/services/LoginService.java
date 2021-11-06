@@ -4,20 +4,27 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.revature.Driver;
 import com.revature.models.User;
 import com.revature.models.UserDTO;
-import com.revature.repositories.UserDAO;
-import com.revature.repositories.UserDAOImplementation;
 
 public class LoginService {
 	
-	private UserDAO userDao = new UserDAOImplementation();
+	private UserDAO userDao = new UserDAO();
 	
+//	public boolean login(UserDTO userDto) {
+//		User user = userDao.getByUsername(userDto.username);
+//		
+//		if(user!=null && (userDto.password.hashCode()==user.getPassword())) {
+//			return true;
+//		}
+//		
+//		return false;
+//	}
+
 	private static Logger log = LoggerFactory.getLogger(LoginService.class.getName());
 
 	public boolean login(UserDTO userDto) {
-		User user = userDao.findByUsername(userDto.username);
+		User user = userDao.getByUsername(userDto.username);
 		
 //		if(user!=null && (userDto.password.hashCode()==user.getPassword())) {
 //			return true;
@@ -34,12 +41,12 @@ public class LoginService {
 	public boolean checkPassword(User user, String password) {
 		
 		log.debug("In LoginService.checkPassword(User,Password)");
-		log.debug("user.getEncryptedPassword() = "+user.getEncrypted_password());
+		log.debug("user.getEncryptedPassword() = "+user.getPassword());
 		log.debug("parameter arg password is : "+password);
 		
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(16);
 				
-		if(encoder.matches(password, user.getEncrypted_password()))
+		if(encoder.matches(password, user.getPassword()))
 			return true;
 		else {
 			System.out.println("password does not match");
@@ -54,6 +61,8 @@ public class LoginService {
 		return encoder.encode(password);
 		
 	}
+		
+	
 	
 	
 	

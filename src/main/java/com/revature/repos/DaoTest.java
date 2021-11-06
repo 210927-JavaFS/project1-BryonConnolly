@@ -1,10 +1,10 @@
-package com.revature.repositories;
+package com.revature.repos;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 import com.revature.models.Reimbursement;
-import com.revature.models.User;
+import com.revature.models.UserWAS;
 import com.revature.models.UserRole;
 import com.revature.services.LoginService;
 
@@ -29,13 +29,13 @@ public class DaoTest {
 		String username = "employee1";
 		String encrypted_password = new LoginService().encryptPassword("password"); 
 		
-		User user = new User(username, encrypted_password, role);
+		UserWAS user = new UserWAS(username, encrypted_password, role);
 		System.out.println(user);
 		
-		userDAO.updateUser(user);
+		userDAO.addUser(user);
 		
 		
-		reimbursementDAO.addReimbursement(new Reimbursement(1,1,1));
+//		reimbursementDAO.addReimbursement(new Reimbursement(1,1,1));
 		
 		
 		

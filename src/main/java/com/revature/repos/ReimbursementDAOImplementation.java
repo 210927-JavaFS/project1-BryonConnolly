@@ -1,4 +1,4 @@
-package com.revature.repositories;
+package com.revature.repos;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.hibernate.query.Query;
 import com.revature.models.Reimbursement;
 import com.revature.models.ReimbursementStatus;
 import com.revature.models.ReimbursementType;
-import com.revature.models.User;
+import com.revature.models.UserWAS;
 import com.revature.utils.HibernateUtil;
 
 public class ReimbursementDAOImplementation implements ReimbursementDAO{

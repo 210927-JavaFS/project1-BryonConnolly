@@ -2,66 +2,66 @@ package com.revature.services;
 
 import java.util.List;
 
-import com.revature.models.User;
-import com.revature.repositories.UserDAO;
-import com.revature.repositories.UserDAOImplementation;
+import com.revature.models.UserWAS;
+import com.revature.repos.UserDAO;
+import com.revature.repos.UserDAOImplementation;
 
 public class UserService {
 	
 	private UserDAO userDao = new UserDAOImplementation();
 	
-	public List<User> getAllUsers() {
+	public List<UserWAS> getAllUsers() {
 		return userDao.findAll();
 	}
 
-	public User getUser(int id) {
-		User user = userDao.findById(id);
+	public UserWAS getUser(int id) {
+		UserWAS user = userDao.findById(id);
 		if (user != null) {
 			return user;
 		}else {
-			return new User();
+			return new UserWAS();
 		}
 	}
 	
-	public User getUser(User user) {
-		User founduser = userDao.findByUsername(user.getUsername());
+	public UserWAS getUser(UserWAS user) {
+		UserWAS founduser = userDao.findByUsername(user.getUsername());
 		if (founduser != null) {
 			return founduser;
 		}else {
-			return new User();
+			return new UserWAS();
 		}
 	}
 	
-	public User getUser(String username) {
-		User user = userDao.findByUsername(username);
+	public UserWAS getUser(String username) {
+		UserWAS user = userDao.findByUsername(username);
 		if (user != null) {
 			return user;
 		}else {
-			return new User();
+			return new UserWAS();
 		}
 	}
 	
 	
 	
-	public boolean addUser(User user) {
+	public boolean addUser(UserWAS user) {
 		return userDao.addUser(user);
 	}
 	
-	public boolean updateUser(User user) {
+	public boolean updateUser(UserWAS user) {
 		return userDao.updateUser(user);
 	}
 	
 	public boolean deleteUser(int id) {
-		User user = getUser(id);
+		UserWAS user = getUser(id);
 		return userDao.deleteUser(user);
 	}
 	
-	public boolean deleteUser(User user) {
+	public boolean deleteUser(UserWAS user) {
 		return userDao.deleteUser(user);
 	}
 	
 	public boolean deleteUser(String username) {
-		User user = getUser(username);
+		UserWAS user = getUser(username);
 		return userDao.deleteUser(user);
 	}
 	

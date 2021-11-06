@@ -3,8 +3,8 @@ package com.revature.services;
 import java.util.List;
 
 import com.revature.models.Reimbursement;
-import com.revature.repositories.ReimbursementDAO;
-import com.revature.repositories.ReimbursementDAOImplementation;
+import com.revature.repos.ReimbursementDAO;
+import com.revature.repos.ReimbursementDAOImplementation;
 
 
 
